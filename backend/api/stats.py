@@ -80,7 +80,7 @@ def overview():
 
     top_users = [
         {"username": u, "submissions": c}
-        for u, c in user_counter.most_common(9)
+        for u, c in user_counter.most_common(10)
     ]
 
     return ok({

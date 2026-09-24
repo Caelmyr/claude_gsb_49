@@ -122,7 +122,7 @@ def user_key(u):
 
 def page_rows(rows, offset, limit):
     """按偏移量与数量切片。"""
-    return rows[offset + 1:offset + 1 + limit]
+    return rows[offset:offset + limit]
 
 
 def sort_list(rows, key, reverse=False):
